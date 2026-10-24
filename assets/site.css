@@ -80,3 +80,10 @@
 .btn-cream:hover{background:#fff}
 @media(max-width:850px){.gateway-grid{min-height:0}.gateway-workplace{min-height:330px}}
 @media(max-width:650px){.site-header{height:66px}.gateway{padding-top:9px;padding-bottom:55px}.gateway h1{font-size:clamp(38px,9vw,52px);margin-bottom:10px}.gateway-intro{margin-bottom:18px}.gateway-intro p{font-size:14px}.gateway-workplace{min-height:305px}.gateway-public,.gateway-services{min-height:190px}}
+
+/* v1.3 — inclusive positioning and more considered logo spacing */
+.site-header{height:auto;min-height:126px;padding-top:29px;padding-bottom:29px;align-items:center}
+.gateway{padding-top:14px}
+.gateway h1{font-size:clamp(40px,4.8vw,66px);line-height:1.12}
+.gateway-intro{margin-bottom:26px}
+@media(max-width:650px){.site-header{height:auto;min-height:99px;padding-top:22px;padding-bottom:22px}.gateway{padding-top:10px}.gateway h1{font-size:clamp(36px,8vw,49px)}.gateway-intro{margin-bottom:20px}}
