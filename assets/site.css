@@ -87,3 +87,51 @@
 .gateway h1{font-size:clamp(40px,4.8vw,66px);line-height:1.12}
 .gateway-intro{margin-bottom:26px}
 @media(max-width:650px){.site-header{height:auto;min-height:99px;padding-top:22px;padding-bottom:22px}.gateway{padding-top:10px}.gateway h1{font-size:clamp(36px,8vw,49px)}.gateway-intro{margin-bottom:20px}}
+
+/* Parent gateway: headline and supporting copy use full grid width. */
+.gateway-intro-copy{max-width:none;width:100%}
+.gateway-intro p{max-width:none}
+.gateway-intro{width:100%}
+.gateway h1{max-width:none}
+/* Team photograph: preserve the complete original photo rather than cropping faces. */
+.promise-visual{background:#263c4b;display:flex;align-items:center;justify-content:center;min-height:0;aspect-ratio:1.32;overflow:hidden}
+.promise-visual img{position:relative;inset:auto;width:100%;height:auto;max-height:100%;object-fit:contain;display:block}
+.promise-visual .visual-caption{background:linear-gradient(0deg,rgba(16,29,36,.9),transparent);color:white;left:0;right:0;bottom:0;border-radius:0;padding:45px 24px 18px}
+.contact-hub{padding-top:90px;padding-bottom:110px}
+.contact-heading{max-width:780px;margin-bottom:34px}
+.contact-heading h2{font:800 clamp(38px,4.6vw,60px)/1.13 var(--font-display);letter-spacing:-.055em;margin:14px 0 13px}
+.contact-heading p{font-size:16px;color:#667478;line-height:1.7;margin:0}
+.contact-hub-grid{display:grid;grid-template-columns:.93fr 1.07fr;gap:24px;align-items:stretch}
+.hq-card{border-radius:24px;background:#f6f3f4;overflow:hidden}
+.hq-image{height:250px;background:#e4e6e5}
+.hq-image img{width:100%;height:100%;object-fit:cover}
+.hq-body{padding:34px 36px 40px}
+.hq-body h3,.general-form h3{font:800 clamp(26px,2.7vw,34px)/1.17 var(--font-display);letter-spacing:-.04em;margin:12px 0}
+.hq-body>p,.general-form>p{color:#65737a;line-height:1.7;font-size:14px;margin:0 0 28px}
+.hq-detail{border-top:1px solid #dcdfe0;padding:17px 0;display:grid;grid-template-columns:94px 1fr;gap:12px}
+.hq-detail-label{font-size:10px;font-weight:800;letter-spacing:.12em;color:#7d3c55;padding-top:3px}
+.hq-detail a{text-decoration:none;font-size:14px;font-weight:700;line-height:1.6;color:#334b5a;overflow-wrap:anywhere}
+.hq-detail a:hover{text-decoration:underline}
+.general-form{border:1px solid #e7e9e8;border-radius:24px;padding:clamp(27px,3.5vw,48px);background:#fff}
+.general-fields{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:24px 0}
+.general-field{min-width:0;display:flex;flex-direction:column;gap:8px}
+.general-field.full{grid-column:1/-1}
+.general-field label{font-size:12px;font-weight:800;color:#33444a}
+.general-field label span{color:#7d3c55}
+.general-field input,.general-field select,.general-field textarea{width:100%;min-width:0;background:#fbfcfc;border:1px solid #d9e0e1;border-radius:11px;padding:13px 14px;font:500 14px var(--font-body);color:#293f4b}
+.general-field textarea{resize:vertical;min-height:130px}
+.general-field :is(input,select,textarea):focus{outline:2px solid #7d3c55;outline-offset:1px}
+.general-submit{display:inline-flex;align-items:center;justify-content:space-between;gap:50px;background:#632b42;color:#fff;border:0;border-radius:999px;padding:16px 23px;min-height:52px;font-size:14px;font-weight:800;cursor:pointer}
+.general-submit:hover{background:#79334f}
+.general-submit:disabled{opacity:.65;cursor:wait}
+.form-status{font-size:13px;font-weight:700;line-height:1.5;min-height:0;margin:13px 0 0}
+.form-status[data-state="error"]{color:#a33131}
+.form-status[data-state="success"]{color:#166b54}
+.general-form .form-privacy{font-size:11px;color:#7b8789;margin:15px 0 0;line-height:1.6}
+.form-honeypot{position:absolute!important;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media(max-width:850px){.contact-hub-grid{grid-template-columns:1fr}.hq-image{height:320px}.contact-hub{padding-top:70px;padding-bottom:80px}}
+@media(max-width:650px){.contact-hub{padding-top:65px;padding-bottom:75px}.contact-hub-grid{gap:16px}.hq-image{height:230px}.hq-body{padding:28px 24px}.general-form{padding:28px 22px}.general-fields{grid-template-columns:1fr}.general-field.full{grid-column:auto}.promise-visual{aspect-ratio:1.22}}
+/* Keep the full team photo visible at its native aspect ratio. */
+.promise-visual{aspect-ratio:auto;min-height:0}
+.promise-visual img{position:static;width:100%;height:auto;max-height:none;object-fit:contain}
+@media(max-width:650px){.promise-visual{aspect-ratio:auto}}
