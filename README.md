@@ -1,4 +1,4 @@
-# Results Training — Parent Website
+# Results Training — Parent Website 
 
 Single-page routing website for **resultstraining.com.au**.
 
