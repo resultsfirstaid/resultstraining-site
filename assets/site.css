@@ -135,3 +135,19 @@
 .promise-visual{aspect-ratio:auto;min-height:0}
 .promise-visual img{position:static;width:100%;height:auto;max-height:none;object-fit:contain}
 @media(max-width:650px){.promise-visual{aspect-ratio:auto}}
+
+/* Client logo scroller: mirrors the Workplace Training homepage. */
+.trust{background:#fff;border:0;padding:30px 0}
+.trust .trust-in{display:flex;align-items:center;gap:30px}
+.trust p{flex:0 0 180px;max-width:180px;margin:0;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#859088;line-height:1.65}
+.trust .logo-window{min-width:0;overflow:hidden;flex:1;mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+.trust .logos{display:flex;align-items:center;justify-content:flex-start;gap:0;width:max-content;animation:logo-drift 69s linear infinite;will-change:transform}
+.trust .logo-group{display:flex;align-items:center;flex:0 0 auto;gap:58px;padding-right:58px}
+.trust .client-logo{flex:0 0 150px;min-width:150px;max-width:150px;min-height:65px;display:flex;align-items:center;justify-content:center}
+.trust .client-logo img{max-width:145px;max-height:65px;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:.78;transition:filter .2s,opacity .2s}
+.trust .client-logo img:hover{filter:none;opacity:1}
+.trust .logo-window:hover .logos,.trust .logo-window:focus-within .logos{animation-play-state:paused}
+@keyframes logo-drift{to{transform:translateX(-50%)}}
+@media(max-width:950px){.trust .trust-in{display:block}.trust p{max-width:none;margin-bottom:20px}}
+@media(max-width:650px){.trust{padding:25px 0}.trust p{margin-bottom:18px}}
+@media(prefers-reduced-motion:reduce){.trust .logos{animation:none;flex-wrap:wrap;width:auto;justify-content:center}.trust .logo-window{mask-image:none;overflow:visible}.trust .logo-group[aria-hidden="true"]{display:none}.trust .logo-group{flex-wrap:wrap;justify-content:center;padding-right:0;gap:18px}.trust .client-logo{flex-basis:120px;min-width:120px}}
