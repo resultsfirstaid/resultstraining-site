@@ -151,3 +151,9 @@
 @media(max-width:950px){.trust .trust-in{display:block}.trust p{max-width:none;margin-bottom:20px}}
 @media(max-width:650px){.trust{padding:25px 0}.trust p{margin-bottom:18px}}
 @media(prefers-reduced-motion:reduce){.trust .logos{animation:none;flex-wrap:wrap;width:auto;justify-content:center}.trust .logo-window{mask-image:none;overflow:visible}.trust .logo-group[aria-hidden="true"]{display:none}.trust .logo-group{flex-wrap:wrap;justify-content:center;padding-right:0;gap:18px}.trust .client-logo{flex-basis:120px;min-width:120px}}
+
+/* Balance the gateway's visual spacing against the adjacent logo bar.
+   The logo bar itself has top padding, so include that in the lower gap. */
+@media(min-width:951px){.gateway{padding-top:60px;padding-bottom:30px}}
+@media(min-width:651px) and (max-width:950px){.gateway{padding-top:52px;padding-bottom:22px}}
+@media(max-width:650px){.gateway{padding-top:41px;padding-bottom:16px}}
